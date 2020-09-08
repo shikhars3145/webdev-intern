@@ -7,7 +7,7 @@ form.addEventListener('submit',async (e)=>{
     const long = document.querySelector('#long').value;
     const radius = document.querySelector('#radius').value;
     
-    const res = await axios.post('http://localhost:3000/api/partners', {lat,long,radius});
+    const res = await axios.post('/api/partners', {lat,long,radius});
     console.log(res.data)
     const results = document.querySelector('.results');
     if(!res.data.data.length)
