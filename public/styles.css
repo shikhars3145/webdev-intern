@@ -1,0 +1,15 @@
+body{
+    width: 100%
+}
+
+form {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+form>input, button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
