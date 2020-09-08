@@ -14,8 +14,8 @@ form.addEventListener('submit',async (e)=>{
     results.innerHTML = `<h1> No results </h1>`;
     else{
         // console.log('else runnig');
-        // results.innerHTML = 'res';
-        let HTML = 'results';
+        results.innerHTML = '';
+        // let HTML = 'results';
 
         res.data.data.forEach(partner=>{
             console.log(partner.organization)
