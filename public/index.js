@@ -20,17 +20,17 @@ form.addEventListener('submit',async (e)=>{
         res.data.data.forEach(partner=>{
             console.log(partner.organization)
             const tag = document.createElement("li");
-            const text = document.createTextNode(partner.organization);
+            const text = document.createTextNode(`Name: ${partner.organization}`);
             tag.appendChild(text);
             results.appendChild(tag)
-            HTML.concat(`<li>${partner.organization}</li>`);
+            HTML.concat(`<li>Name:${partner.organization}</li>`);
             partner.offices.forEach(office=> {if(office.inRadius) {
                 console.log(office.address)
                 const tag = document.createElement("li");
-            const text = document.createTextNode(office.address);
+            const text = document.createTextNode(`Address: ${office.address}`);
             tag.appendChild(text);
             results.appendChild(tag)
-                HTML.concat(`<li>${office.address}</li>`);}})
+                HTML.concat(`<li>Address:${office.address}</li>`);}})
         });
         
     }
